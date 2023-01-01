@@ -81,5 +81,49 @@ html {
 
 .credit a{
     color: rgb(230, 118, 14);
+}
+
+.formSide{
+    /* background-color: rgb(233, 222, 202); */
+    background-color: #fc8f2294;
+    --padding-left: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.emphasis{
+    font-style: italic;
+}
+
+.desire{
+    margin-top: 1.3em;
+    margin-bottom: 2em;
+}
+
+.promote{
+    padding: var(--padding-left);
+    font-weight: 600;
+    font-size: 1.4em;
+}
+
+.whitebg{
+    background-color: #373c42;
+    color: white;
+    font-weight: 400;
     
+}
+
+.hype{
+    font-weight:500;
+    font-size: 1.2em;
+    padding: 1em;
+}
+
+label{
+    text-transform: uppercase;
+}
+
+.haveAccount{
+    padding-left: var(--padding-left);
 }
