@@ -1,0 +1,85 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	/* vertical-align: baseline; */
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ******* */
+html {
+    font-family: 'Raleway', sans-serif;
+
+}
+
+#mainContain{
+    display:flex;
+    height: 100vh;
+    
+}
+
+.visualSide{
+    height: 100%;
+    flex-basis: 30%;
+    background-image: url(./asset/lenstravelier-unsplash_wlogo.jpeg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    display:flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    flex-shrink: 0;
+    flex-grow:0;
+}
+
+.credit{
+    color: #fff;
+    text-align: center;
+    padding-bottom: 10px;
+    /* border: 1px red solid; */
+}
+
+.credit a{
+    color: rgb(230, 118, 14);
+    
+}
