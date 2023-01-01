@@ -1,15 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Sign-up Here</title>
+    <link rel="stylesheet" href="formstyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
     <div id="mainContain">
-        <div class="visualSide"></div>
-        <div class="formSide"></div>
+        <div class="visualSide">
+            
+            <div class="clearLetters">
+                
+            </div>
+            <p class="credit">Photo by <a
+                    href="https://unsplash.com/@marjantaghipour?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Marjan
+                    Taghipour</a> on <a
+                    href="https://unsplash.com/photos/ErlvFsLNaos?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+            </p>
+
+            <!-- <p>
+                Photo by <a href="https://unsplash.com/@lenstravelier?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Lenstravelier</a> on <a href="https://unsplash.com/images/nature/sun?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText">Unsplash</a>
+    
+            </p> -->
+        </div>
+       
+        <div class="formSide">
+
+            <form action="./someplace" method="post">
+                <div class="whitebg">
+                    <p>Let's do this!</p>
+                    <label for="firstname">First Name</label>
+                    <input type="text" name="firstname" id="firstname">
+                    <label for="lastname">Last Name</label>
+                    <input type="text" name="lastname" id="lastname">
+                    <label for="email">Email</label>
+                    <input type="email" name="email" id="email">
+                    <label for="numba">Phone Number</label>
+                    <input type="tel" name="numba" id="numba">
+                    <label for="pw">Password</label>
+                    <input type="password" name="pw" id="pw">
+                    <label for="pwConfirm">Confirm Password</label>
+                    <input type="password" name="pwConfirm" id="pwConfirm">
+                </div>
+                <button type="submit">Create Account</button>
+            </form>
+            <p>Already have an account? <a href="/loginPlace">Log in</a></p>
+        </div>
     </div>
 </body>
+
 </html>
