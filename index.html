@@ -27,26 +27,56 @@
         </div>
        
         <div class="formSide">
+            <section class="promote">
+                <p>This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams.
+                    <p>Sign up now to get started.</p>
+                </p>
 
+                <p class="desire">You <span class="emphasis"><em>know</em></span> you want to.</p>
+            </section>
             <form action="./someplace" method="post">
-                <div class="whitebg">
-                    <p>Let's do this!</p>
-                    <label for="firstname">First Name</label>
-                    <input type="text" name="firstname" id="firstname">
-                    <label for="lastname">Last Name</label>
-                    <input type="text" name="lastname" id="lastname">
-                    <label for="email">Email</label>
-                    <input type="email" name="email" id="email">
-                    <label for="numba">Phone Number</label>
-                    <input type="tel" name="numba" id="numba">
-                    <label for="pw">Password</label>
-                    <input type="password" name="pw" id="pw">
-                    <label for="pwConfirm">Confirm Password</label>
-                    <input type="password" name="pwConfirm" id="pwConfirm">
+                <div class="formDiv">
+                    <p class="hype">Let's do this!</p>
+                    <div class="inputsDiv">
+
+                        <div class="inputGroup">
+                            <label for="firstname">First Name</label>
+                            <input type="text" name="firstname" id="firstname" placeholder="John" required>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="lastname">Last Name</label>
+                            <input type="text" name="lastname" id="lastname" placeholder="Doe" required>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="email">Email</label>
+                            <input type="email" name="email" id="email" placeholder="example@email.com" required>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="numba">Phone Number</label>
+                            <input type="tel" name="numba" id="numba" placeholder="555-555-5555" pattern="\d{3}-\d{3}-\d{4}" title="Input phone number in the xxx-xxx-xxxx format" required>
+                        </div>
+
+                        <div class="inputGroup">
+                            <label for="pw">Password</label>
+                            <input type="password" name="pw" id="pw" placeholder="!Passw0rd" title="Must be at least 8 characters: include 1 symbol, 1 capital letter, 1 lowercase letter, and 1 number" 
+                            oninvalid="this.setCustomValidity('Must be at least 8 characters: include 1 symbol, 1 capital letter, 1 lowercase and 1 number')"
+  oninput="this.setCustomValidity('')" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                            
+                        </div>
+                        <div class="inputGroup">
+                            <label for="pwConfirm">Confirm Password</label>
+                            <input type="password" name="pwConfirm" id="pwConfirm" placeholder="!Passw0rd" title="Must be at least 8 characters: include 1 symbol, 1 capital letter, and 1 number" 
+                            oninvalid="this.setCustomValidity('Must be at least 8 characters: include 1 symbol, 1 capital letter, 1 lowercase and 1 number')"
+  oninput="this.setCustomValidity('')" pattern="(?=^.{8,}$)(?=.*\d)(?=.*[!@#$%^&*]+)(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$" required>
+                        </div>
+                    </div>
                 </div>
                 <button type="submit">Create Account</button>
             </form>
-            <p>Already have an account? <a href="/loginPlace">Log in</a></p>
+            <p class="haveAccount">Already have an account? <a href="/loginPlace">Log in</a></p>
         </div>
     </div>
 </body>
